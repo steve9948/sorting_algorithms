@@ -2,8 +2,8 @@
 
 /**
  * change_ints - Swap two integers in an array.
- * @a: First integer to be swapped.
- * @b: Second integer to be swapped.
+ * @first: First integer to be swapped.
+ * @second: Second integer to be swapped.
  */
 void change_ints(int *first, int *second)
 {
@@ -38,7 +38,7 @@ void shell_sort(int *array, size_t size)
 			b = a;
 			while (b >= gap && array[b - gap] > array[b])
 			{
-			 change_ints(array + b, array + (b - gap));
+				change_ints(array + b, array + (b - gap));
 				b -= gap;
 			}
 		}
